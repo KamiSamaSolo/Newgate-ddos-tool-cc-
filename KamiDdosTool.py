@@ -19,12 +19,12 @@ print('''\r\n
 ┌─────────────────────────────────────────────────────┐─────────
 │ version 1.1.1                                                │
 │                                                              │
-│          [!!!Prevent Illegal CC-Attack!!!]                   │                      
+│          [!!!Bu İllegal Bir SALDIRIDIR!!!]                   │                      
 │                                                              │
 │                               Code By Kami Newgate           │
 ├─────────────────────────────────────────────────────┤─────────
 │Github: https://github.com/KamiSamaSolo/Newgate-ddos-tool-cc- │
-│           [!]DO NOT ATTACK GOV WEBSITE[!]                    │
+│           [!]DO NOT ATTACK .GOV OR .EDU WEBSITE[!]           │
 └─────────────────────────────────────────────────────┘─────────\r\n''')
 
 useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1",
@@ -195,7 +195,7 @@ def prevent():
         print("Error Ip range!")
         exit()
     if 'gov' in ip or 'edu' in ip:
-        print("Can't attack .gov or .edu website!")
+        print(".gov veya .edu sitelerine saldırma yoksa ananı!")
         exit()
 
 def main():
