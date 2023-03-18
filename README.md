@@ -21,5 +21,5 @@ cd Pummel
 
 
 
-python3 KamiDdosTool.py
+python3 pummel.py
 
