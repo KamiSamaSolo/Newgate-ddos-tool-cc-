@@ -13,7 +13,7 @@ pip3 install requests pysocks
 
 git clone https://github.com/KamiSamaSolo/Newgate-ddos-tool-cc-
 
-cd KamiSamaSolo
+cd Pummel
 
 
 
