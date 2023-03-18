@@ -280,7 +280,7 @@ def get():
             socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, str(proxy[0]), int(proxy[1]), True)
             s = socks.socksocket()
             if port == 443:
-                ctx = ssl.SSLContext()#credits to leeon123
+                ctx = ssl.SSLContext()#credits to Kami
                 s = ctx.wrap_socket(s,server_hostname=str(ip))
             s.connect((str(ip), int(port)))
             for _ in range(multiple):
@@ -316,7 +316,7 @@ def checking(lines,):
 	global nums
 	try:
 		proxy = lines.strip().split(":")
-		socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, str(proxy[0]), int(proxy[1]), True)#credits to leeon123
+		socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, str(proxy[0]), int(proxy[1]), True)#credits to Kami
 	except:
 		proxies.remove(lines)
 		return
@@ -345,7 +345,7 @@ def check_socks():
 	global nums
 	thread_list=[]
 	for lines in list(proxies):
-		th = threading.Thread(target=checking,args=(lines,))#credits to leeon123
+		th = threading.Thread(target=checking,args=(lines,))#credits to Kami
 		th.start()
 		thread_list.append(th)
 		time.sleep(0.01)
